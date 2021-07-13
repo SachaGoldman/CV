@@ -12,12 +12,14 @@
 % Colors %
 %%%%%%%%%%
 
+\usepackage{ulem}
 \RequirePackage{xcolor}
 
-\definecolor{white}{RGB}{255,255,255}
+\definecolor{white}{HTML}{FFFFFF}
 \definecolor{darkgray}{HTML}{333333}
 \definecolor{gray}{HTML}{4D4D4D}
 \definecolor{lightgray}{HTML}{999999}
+\definecolor{taggray}{HTML}{E9E9E9}
 \definecolor{headercolor}{HTML}{222222}
 
 %%%%%%%%%
@@ -108,11 +110,11 @@
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  #1&\parbox[t]{11.8cm}{%
-    \textbf{#2}%
+  \parbox[t]{14cm}{%
+    \textbf{#1}%
     \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
-    #4\vspace{\parsep}%
+    {\footnotesize\addfontfeature{Color=lightgray} #2}\\%
+    #3\vspace{\parsep}%
   }\\}
 
 %%%%%%%%%%%%%%
@@ -125,9 +127,10 @@
 \newenvironment{aside}{%
   \let\oldsection\section
   \renewcommand{\section}[1]{
-    \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
+    \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}%
+    \vspace{1mm}
   }
-  \begin{textblock}{4.2}(1.3, 4.33)
+  \begin{textblock}{4.2}(0.8, 5.6)
   \begin{flushright}
   \obeycr
 }{%
@@ -137,18 +140,27 @@
   \let\section\oldsection
 }
 
+%%%%%%%%
+% Tags %
+%%%%%%%%
+
+\usepackage{tikz}
+
+\newcommand{\tag}[1]{
+\begin{tikzpicture}%
+	\node[draw = taggray, fill = taggray, rectangle, rounded corners, text = black](char){\footnotesize{#1\vphantom{j}}};
+\end{tikzpicture}
+\hspace{-2.5mm}
+}
+
 %%%%%%%%%%%%%%%%
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.5cm,top=2cm,right=1.3cm,bottom=1.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6cm,top=2cm,right=1.3cm,bottom=0cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
-\hypersetup{
-    colorlinks=false,       
-    linkcolor=red,          
-    citecolor=red,        
-    filecolor=red,      
-    urlcolor = red}
+\hypersetup{colorlinks=false}
+\renewcommand{\url}[2]{\color{lightgray}\uline{\color{black}\href{#1}{#2}}\color{black}}
     
 % A fix for \href{}{} colors not working with fontspec
 \makeatletter

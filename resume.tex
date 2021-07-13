@@ -2,32 +2,45 @@
 
 \begin{document}
 
-\header{Sacha}{Goldman}{Software Developer}
+\header{Sacha}{Goldman}{}% Subtitle: (Software Engineer, Machine Learning Engineer, Computer Science and Mathematics Student)
 
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{aside} % In the aside, each new line forces a line break
-\section{Contact}
-123 Huron, Unit 1
-Toronto, Ontario
-Canada 
+\section{Location}
+Toronto, Canada
 ~ \vspace{-2mm}
-778-683-7996
+US + Canadian Citizen 
+Willing to Relocate
+~ \vspace{-2mm}
 \section{Online}
 \textbf{Email}
-\href{mailto:sachagoldman@icloud.com}{sachagoldman@icloud.com} 
+\url{mailto:sachagoldman@icloud.com}{sachagoldman@icloud.com} 
 ~ \vspace{-2mm}
 \textbf{Website} 
-\href{https://sachagoldman.com}{sachagoldman.com} 
+\url{https://sachagoldman.com}{sachagoldman.com} 
 ~ \vspace{-2mm}
 \textbf{Github}
-\href{https://github.com/SachaGoldman}{SachaGoldman}
-\section{Software}
-Python {\color{red} $\varheartsuit$}, Swift,
-Java, SQL, \LaTeX
-C, R, Git, Shell
+\url{https://github.com/SachaGoldman}{SachaGoldman}
+~ \vspace{-2mm}
+\textbf{LinkedIn}
+\url{https://www.linkedin.com/in/sacha-goldman-5b95391a0/}{Sacha Goldman}
+\section{Languages}
+{\color{red} $\varheartsuit$} Python, Swift, 
+C, TypeScript
+\section{Tools}
+\LaTeX, Git, Shell, 
+SwiftUI, PyTorch
+\section{Awards}
+New College Council 
+In-Course Scholarship
+~ \vspace{-1mm}
+William and Shirley Read 
+Scholarship
+~ \vspace{-1mm}
+District Scholarship
 \end{aside}
 
 %----------------------------------------------------------------------------------------
@@ -41,10 +54,12 @@ C, R, Git, Shell
 %------------------------------------------------
 
 \entry
-{2019–Now}
-{Bachlors of Science {\normalfont Computer Science and Mathematics}}
-{The University of Toronto}
-{\emph{3.78/4.0 GPA \ Class of 2023} \\ This degree has a focus in artificial intelligence and also covers breadth of topics in computer science and mathematics.}
+{Computer Science and Mathematics \ {\normalfont University of Toronto}}
+{Bachelors of Science}
+{\emph{3.85/4.0 GPA \ Graduating May 2023}
+~ \vspace{1mm}
+
+This degree has a specific interest in the intersection of machine learning. Core topics include: algorithms, data-structures, linear algebra, group theory, single and multivariable analysis, probability and statistics, and programming.}
 
 %------------------------------------------------
 
@@ -60,38 +75,61 @@ C, R, Git, Shell
 
 %------------------------------------------------
 
+\vspace{2mm}
+
 \entry
-{2020}
-{\href{https://www.altairix.com/}{Altairix}}
-{Toronto, Ontario}
-{\emph{Software Development Intern} \\
-Worked as a full stack developer at Altairix inc., writing Java to develop their web and Android based learning platforms for the Arrowsmith Program.
+{\url{https://www.ssense.com}{SSENSE} \ {\normalfont Software Development Intern}\vspace{1mm}}
+{Montreal 2021}
+{Worked as an iOS developer on the mobile team. Part of rearchitecting the app to the composable architecture and brining SwiftUI into the codebase. Acted as a feature lead on core features, including a product image zoom feature and better ApplePay integration.
+~ \vspace{1mm}
 
 Responsibilities Included:
 
 \begin{itemize}
-	\item Writing well documented and efficient Java
-	\item Working with other developers on large scale feature sets
-	\item Data analysis
+	\item Writing Swift, SwiftUI, and UIKit
+	\item Reviewing other developers code
+	\item Researching and presenting on technical topics
 \end{itemize}}
 
 %------------------------------------------------
 
+\vspace{2mm}
+
 \entry
-{2018–2019}
-{George Cotton Productions}{Vancouver, British Colombia}
-{\emph{Lighting Board Operator} \\
-Designed the lighting for shows held at Jules Quesnel Elementary. Worked with a team of people at a variety of ages in a variety of disciplines.
+{\url{https://www.altairix.com/}{Altairix} \ {\normalfont Software Development Intern} \vspace{1mm}}
+{Toronto 2020}
+{Worked as a full stack developer, writing Java to develop the web and Android based learning platforms for the Arrowsmith Program.
+~ \vspace{1mm}
 
 Responsibilities Included:
 
 \begin{itemize}
-	\item Designing and programming lighting cues
-	\item Hanging lights
-	\item Directing a followspot technician
+	\item Writing Java and SQL
+	\item Working with other developers on large scale features
+	\item Statistical analysis and presentation
 \end{itemize}}
 
 %------------------------------------------------
+
+%% The inclusion of this depends on the position
+%
+%\vspace{2mm}
+%
+%\entry
+%{Data Structures Tutor\vspace{2mm}}
+%{Toronto 2021}
+%{Tutored UofT's CSC263, a course on data structures and algorithms. Helped a student understand difficult and nuanced concepts for the first time, by presenting them from a different perspective.}
+%
+%%------------------------------------------------
+%
+%% The inclusion of this depends on the position
+%
+%\entry
+%{George Cotton Productions \ {\normalfont Lighting Board Operator}\vspace{1mm}}
+%{Vancouver 2018–2019}
+%{Programmed, hung, and designed the lighting for shows held at Jules Quesnel Elementary. Worked with a team of people at a variety of ages in a variety of disciplines, and directed a follow-spot technician}
+%
+%%------------------------------------------------
 
 \end{entrylist}
 
@@ -106,55 +144,39 @@ Responsibilities Included:
 
 %------------------------------------------------
 
+\vspace{2mm}
+
 \entry
-{2020}
-{LaTouch}
-{}
-{A macOS app for the Touch Bar MacBook Pro. The app allows users to define sets of custom keys for the Touch Bar and to define the image that appears on the keys in \LaTeX, when the key is pressed it inserts custom snippets of \LaTeX $\:$ into whatever text editor the user is writing in. The app is written entirely in Swift and uses the SwiftUI framework.}
+{\url{https://apps.apple.com/us/app/k2/id1572547510}{K2}}{macOS App}
+{ ~ \vspace{-2.5mm}
+
+\tag{Python} \tag{Swift} \tag{SwiftUI} \tag{Machine Learning}
+
+A macOS app that scans your Apple Photos library and creates an album of each unique face found. This was inspired by Apple Photos' lack lustre built in facial clustering. The application uses the Photos API to find the pictures, then starts up python subprocesses  to cluster the faces. Some challenges for this project included code signing python for the App Store, and tweaking the model to get sufficient accuracy.}
 
 %------------------------------------------------
 
+\vspace{2mm}
+
 \entry
-{2019}
-{\href{https://sachagoldman.com/dots/}{Dots}}
-{}
-{A JavaScript project simulating a number of particles applying Newtonian forces on each other that can form natural structures.}
+{\url{https://sachagoldman.com}{sachagoldman.com}}{Website}
+{ ~ \vspace{-2.5mm}
+
+\tag{Vue} \tag{TypeScript}
+
+My personal website serving as a home page for my presence online. This website was written from scratch in Vue and showcases my projects and academics. The biggest challenge for this project was learning Vue, as it was a completely foreign the framework.}
 
 %------------------------------------------------
 
-\end{entrylist}
-
-
-%----------------------------------------------------------------------------------------
-%	AWARDS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Awards}
-
-\begin{entrylist}
-
-%------------------------------------------------
+% The inclusion of this depends on the position
 
 \entry
-{2019}
-{William and Shirley Read Scholarship}
-{Kitsilano Highschool}
-{Awarded to a student with both outstanding achievements academics and major contributions to the school}
+{\url{https://sachagoldman.com/dots/}{Dots}}{Web App}
+{ ~ \vspace{-2.5mm}
 
-%------------------------------------------------
+\tag {JavaScript}
 
-\entry
-{2019}
-{District Scholarship}
-{Vancouver School Board}
-{Awarded by the B.C. government for outstanding academic achievement}
-
-%------------------------------------------------
-\entry
-{2019}
-{AP Scholar with Honour}
-{College Board}
-{For excellent AP scores an a multitude of exams}
+A JavaScript project simulating a number of particles applying forces on each other that can form interesting, natural looking structures.}
 
 %------------------------------------------------
 
