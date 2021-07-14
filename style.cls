@@ -18,8 +18,8 @@
 \definecolor{white}{HTML}{FFFFFF}
 \definecolor{darkgray}{HTML}{333333}
 \definecolor{gray}{HTML}{4D4D4D}
-\definecolor{lightgray}{HTML}{999999}
-\definecolor{taggray}{HTML}{E9E9E9}
+\definecolor{lightgray}{HTML}{888888}
+\definecolor{taggray}{HTML}{EEEEEE}
 \definecolor{headercolor}{HTML}{222222}
 
 %%%%%%%%%
