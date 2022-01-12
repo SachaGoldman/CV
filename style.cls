@@ -146,7 +146,7 @@
 
 \usepackage{tikz}
 
-\newcommand{\tag}[1]{
+\newcommand{\tile}[1]{
 \begin{tikzpicture}%
 	\node[draw = taggray, fill = taggray, rectangle, rounded corners, text = black](char){\footnotesize{#1\vphantom{j}}};
 \end{tikzpicture}
