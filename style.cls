@@ -110,7 +110,7 @@
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  \parbox[t]{14cm}{%
+  \parbox[t]{16.5cm}{%
     \textbf{#1}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #2}\\%
@@ -130,7 +130,7 @@
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}%
     \vspace{1mm}
   }
-  \begin{textblock}{4.2}(0.8, 5.6)
+  \begin{textblock}{4.2}(1.25, 5.6)
   \begin{flushright}
   \obeycr
 }{%
@@ -157,7 +157,7 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6cm,top=2cm,right=1.3cm,bottom=0cm,nohead,nofoot]{geometry}
+\RequirePackage[left=2.75cm,top=2.5cm,right=2.75cm,bottom=1.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{colorlinks=false}
 \renewcommand{\url}[2]{\color{lightgray}\uline{\color{black}\href{#1}{#2}}\color{black}}
