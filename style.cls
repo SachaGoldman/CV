@@ -157,7 +157,7 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=2.75cm,top=2.25cm,right=2.75cm,bottom=1cm,nohead,nofoot]{geometry}
+\RequirePackage[left=2.75cm,top=2.5cm,right=2.75cm,bottom=1cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{colorlinks=false}
 \renewcommand{\url}[2]{\color{lightgray}\uline{\color{black}\href{#1}{#2}}\color{black}}
