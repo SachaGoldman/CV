@@ -1,5 +1,4 @@
 \ProvidesClass{resume}[]
-\NeedsTeXFormat{LaTeX2e}
 
 \DeclareOption*{%
   \PassOptionsToClass{\CurrentOption}{article}%
@@ -7,10 +6,7 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-
-%%%%%%%%%%
 % Colors %
-%%%%%%%%%%
 
 \usepackage{ulem}
 \RequirePackage{xcolor}
@@ -22,12 +18,9 @@
 \definecolor{taggray}{HTML}{EEEEEE}
 \definecolor{headercolor}{HTML}{222222}
 
-%%%%%%%%%
 % Fonts %
-%%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage{unicode-math}
 
 \newfontfamily\bodyfont[]{Helvetica Neue}
 \newfontfamily\thinfont[]{Helvetica Neue UltraLight}
@@ -36,9 +29,7 @@
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
 
-%%%%%%%%%%
 % Header %
-%%%%%%%%%%
 
 \RequirePackage{tikz}
 
@@ -65,9 +56,7 @@
 }
 
 
-%%%%%%%%%%%%%
 % Structure %
-%%%%%%%%%%%%%
 
 \def\@sectioncolor{%
   {\color{headercolor}}
@@ -98,9 +87,7 @@
 
 \pagestyle{empty}
 
-%%%%%%%%%%%%%%%%%%%%
 % List environment %
-%%%%%%%%%%%%%%%%%%%%
 
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
@@ -117,9 +104,7 @@
     #3\vspace{\parsep}%
   }\\}
 
-%%%%%%%%%%%%%%
 % Side block %
-%%%%%%%%%%%%%%
 
 \RequirePackage[absolute,overlay]{textpos}
 \setlength{\TPHorizModule}{1cm}
@@ -140,9 +125,7 @@
   \let\section\oldsection
 }
 
-%%%%%%%%
 % Tags %
-%%%%%%%%
 
 \usepackage{tikz}
 
@@ -153,16 +136,13 @@
 \hspace{-2.5mm}
 }
 
-%%%%%%%%%%%%%%%%
 % Other tweaks %
-%%%%%%%%%%%%%%%%
 
 \RequirePackage[left=2.75cm,top=2.5cm,right=2.75cm,bottom=0cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{colorlinks=false}
 \renewcommand{\url}[2]{\color{lightgray}\uline{\color{black}\href{#1}{#2}}\color{black}}
     
-% A fix for \href{}{} colors not working with fontspec
 \makeatletter
 \def\HyColor@@@@UseColor#1\@nil{\addfontfeatures{Color=#1}}
 \makeatother
